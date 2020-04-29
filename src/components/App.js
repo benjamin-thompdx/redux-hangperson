@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Player1View from './Player1View';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <React.Fragment>
+      <Player1View />
+    </React.Fragment>
   );
 }
 

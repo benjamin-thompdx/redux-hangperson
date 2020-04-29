@@ -1,13 +1,15 @@
 import React from "react";
-import Card from 'react-bootstrap/Form';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 
 function Header() {
   return (
     <React.Fragment>
-      <Jumbotron fluid>
+      <Jumbotron>
         <h1>HANGPERSON</h1>
       </Jumbotron>
     </React.Fragment>
   )
 }
+
+export default Header; 

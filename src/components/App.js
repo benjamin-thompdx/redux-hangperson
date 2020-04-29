@@ -6,8 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <React.Fragment>
-      <Header />
-      <Player1View />
+      <div className="container-fluid">
+        <Header />
+        <Player1View />
+      </div>
     </React.Fragment>
   );
 }

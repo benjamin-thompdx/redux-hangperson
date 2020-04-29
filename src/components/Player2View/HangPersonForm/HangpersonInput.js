@@ -1,8 +1,9 @@
-import React from "react";
+import React from './node_modules/react';
+import React from 'react';
 import ReusableForm from '../../ReusableForm';
-import Card from 'react-bootstrap/Card';
+import Card from './node_modules/react-bootstrap/Card';
 
-function HangPersonInput() {
+function HangpersonInput() {
   return (
   <React.Fragment>
     <Card>
@@ -12,4 +13,4 @@ function HangPersonInput() {
   );
 }
 
-export default HangPersonInput;
+export default HangpersonInput;

@@ -1,11 +1,11 @@
 # Hangperson React-Redux Game
 
-### A website for tracking inventory for a taproom. April 29th - 30th, 2020
+### A React/Redux web application to play hangman. April 29th - 30th, 2020
 #### By: Benjamin Thom, Mariam, Jonathan Carlos, K. Wicz
 
 ## Description
 
-_A website built in React to track a taproom's taps by name, brand, price, style, and quantity. The application utilizes a tap list, a new tap form, and tap-specific details view to accurately monitor inventory._
+_A two-player game for one user to write a phrase and a second user to guess the first user's phrase._
 
 ## Component Tree
 ![component tree](redux-hangperson-component-tree.png)
@@ -40,9 +40,9 @@ _Please visit the [Node.js website](https://nodejs.org/en/download/) for install
 
 _Clone this repository via Terminal using the following commands:_
 * _$ cd desktop_
-* _$ git clone {https://github.com/benjamin-thompdx/tap-room}_
+* _$ git clone {https://github.com/benjamin-thompdx/redux-hangperson}_
 * _$ cd merch-site_
-_Then, confirm that you have navigated to the merch-site project directory by entering "pwd" in Terminal._
+_Then, confirm that you have navigated to the redux-hangperson project directory by entering "pwd" in Terminal._
 
 _Next, install npm at the project's root directory via the following commands:_
 * _$ npm install_
@@ -56,7 +56,7 @@ _No known bugs at this time._
 
 ## Support and Contact Details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/tap-room/issues) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/benjamin-thompdx/redux-hangperson/issues) here on GitHub._
 
 ## Technologies Used
 

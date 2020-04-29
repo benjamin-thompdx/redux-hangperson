@@ -7,11 +7,11 @@ function ReusableForm(props) {
   return (
     <React.Fragment>
       <Form>
-        <Form.Label>Come up with a word or phrase for your opponent to guess.</Form.Label>
+        <Form.Label>{props.label}</Form.Label>
         <Form.Control 
           type = "text"
           name = "playerInput"
-          placeholder = "Type in a phrase" />
+          placeholder = "Type your response here" />
         <ReusableButton buttonText="Submit"/>
       </Form>
     </React.Fragment>

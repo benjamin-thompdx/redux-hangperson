@@ -1,7 +1,10 @@
 import React from 'react';
 import Player1View from './Player1View';
 import Player2View from './Player2View/Player2View';
+import Phrase from './Phrase';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import * as a from './../actions';
 
 
 
@@ -16,11 +19,14 @@ class HangpersonControl extends React.Component {
   }
 
   handleClick = () => {
-    console.log("handleClick was reached")
+    const { dispatch } = this.props;
+    const action = a.toggleView();
+    dispatch(action);
     this.setState({formVisibleOnPage: false});
   }
 
   handleAddingNewPhrase = (player1Input) => {
+    const { dispatch } = this.props;
     this.setState({phraseToGuess: player1Input})
     this.setState({formVisibleOnPage: false});
   }
@@ -42,5 +48,17 @@ class HangpersonControl extends React.Component {
   }
 }
 
+HangpersonControl.propTypes = {
+  phraseToGuess: PropTypes.object
+};
+
+const mapStateToProps = state => {
+  return {
+    formVisibleOnPage: state.formVisibleOnPage,
+    phraseToGuess: state.phraseToGuess
+  }
+}
+
+HangpersonControl = connect(mapStateToProps)(HangpersonControl);
 
 export default HangpersonControl;

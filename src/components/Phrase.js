@@ -7,7 +7,6 @@ function Phrase(props) {
   return (
     <React.Fragment>
       <p>{props.player1Input}</p>
-
     </React.Fragment>
   );
 }

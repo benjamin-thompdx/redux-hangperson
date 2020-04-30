@@ -8,7 +8,8 @@ class HangpersonControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: true
+      formVisibleOnPage: true,
+      phraseToGuess: null
     };
   }
 
@@ -17,10 +18,15 @@ class HangpersonControl extends React.Component {
     this.setState({formVisibleOnPage: false});
   }
 
+  handleAddingNewPhrase = (phrase) => {
+    this.setState({phraseToGuess: phrase})
+    this.setState({formVisibleOnPage: false});
+  }
+
   render(){
     let currentlyVisibleState = null;
     if (this.state.formVisibleOnPage) {
-      currentlyVisibleState = <Player1View onNewGameCreation = {this.handleClick}/>
+      currentlyVisibleState = <Player1View onNewGameCreation = {this.handleAddingNewPhrase}/>
     } else {
       currentlyVisibleState = <Player2View onGuessingLetter = {this.handleClick} />
     }

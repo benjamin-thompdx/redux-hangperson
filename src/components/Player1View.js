@@ -27,9 +27,7 @@ function Player1View(props) {
 }
 
 Player1View.propTypes = {
-  onNewGameCreation: PropTypes.func,
-  // phrase: PropTypes.string.isRequired
-  
+  onNewGameCreation: PropTypes.func
 };
 
 export default Player1View;

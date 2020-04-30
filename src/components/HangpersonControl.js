@@ -7,17 +7,30 @@ class HangpersonControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedView: null
+      formVisibleOnPage: false
     };
   }
 
-  
+  handleClick = () => {
+    this.setState({formVisibleOnPage: true});
+  }
 
   render(){
+    let currentlyVisibleState = null;
+    let buttonText = null;
+    if (this.state.formVisibleOnPage) {
+      currentlyVisibleState = <Player1View onNewGameCreation = {this.handleClick}/>
+      buttonText = "Start Game!";
+    } else {
+      currentlyVisibleState = <Player2View onGuessingLetter = {this.handleClick} />
+      buttonText = "Guess Letter!";
+    }
+
+
     return (
       <React.Fragment>
-        
-
+        { currentlyVisibleState }
+        <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     );
   }

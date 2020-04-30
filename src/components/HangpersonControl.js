@@ -1,6 +1,8 @@
 import React from 'react';
 import Player1View from './Player1View';
 import Player2View from './Player2View/Player2View';
+import { connect } from 'react-redux';
+
 
 
 class HangpersonControl extends React.Component {
@@ -18,8 +20,8 @@ class HangpersonControl extends React.Component {
     this.setState({formVisibleOnPage: false});
   }
 
-  handleAddingNewPhrase = (phrase) => {
-    this.setState({phraseToGuess: phrase})
+  handleAddingNewPhrase = (player1Input) => {
+    this.setState({phraseToGuess: player1Input})
     this.setState({formVisibleOnPage: false});
   }
 

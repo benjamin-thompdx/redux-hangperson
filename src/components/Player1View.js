@@ -10,7 +10,7 @@ function Player1View(props) {
     event.preventDefault();
     console.log("handleNewGameCreation reached!")
     props.onNewGameCreation({
-      phrase: event.target.phrase.value
+      player1Input: event.target.player1Input.value
     });
   }
 

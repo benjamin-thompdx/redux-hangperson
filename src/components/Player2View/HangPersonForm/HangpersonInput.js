@@ -1,7 +1,6 @@
-import React from './node_modules/react';
 import React from 'react';
 import ReusableForm from '../../ReusableForm';
-import Card from './node_modules/react-bootstrap/Card';
+import Card from 'react-bootstrap/Card';
 
 function HangpersonInput() {
   return (

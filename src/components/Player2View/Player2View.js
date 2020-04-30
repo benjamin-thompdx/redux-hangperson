@@ -1,5 +1,5 @@
 import React from 'react';
-import HangpersonForm from './HangpersonForm/HangpersonForm';
+import HangpersonForm from './HangPersonForm/HangPersonForm';
 import HangpersonList from './HangpersonList/HangpersonList';
 import ReusableButton from '../ReusableButton';
 import Container from 'react-bootstrap/Container';

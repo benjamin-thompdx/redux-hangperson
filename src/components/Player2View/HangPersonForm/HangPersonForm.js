@@ -6,18 +6,12 @@ import Card from 'react-bootstrap/Card';
 
 function HangpersonForm() {
   return (
-  <React.Fragment>
-    <Card>
-      <Card.Body>
-        <Card.Title>
-          <HangpersonInput />
-        </Card.Title>
-        <Card.Content>
-          <HangpersonOutput />
-        </Card.Content>
-      </Card.Body>
-    </Card>
-  </React.Fragment>
+    <React.Fragment>
+      <Card>
+        <HangpersonInput />
+        <HangpersonOutput />
+      </Card>
+    </React.Fragment>
   );
 }
 

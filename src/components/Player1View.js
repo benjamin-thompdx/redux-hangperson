@@ -1,6 +1,6 @@
 import React from "react";
 import ReusableForm from './ReusableForm';
-import Card from 'react-bootstrap/Form';
+import Card from 'react-bootstrap/Card';
 
 
 function Player1View() {

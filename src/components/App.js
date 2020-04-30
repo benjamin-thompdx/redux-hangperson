@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Player1View from './Player1View';
-import Player2View from './Player2View/Player2View';
+import HangpersonControl from './HangpersonControl';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -9,8 +8,7 @@ function App() {
     <React.Fragment>
       <div className="container-fluid">
         <Header />
-        <Player1View />
-        <Player2View />
+        <HangpersonControl />
       </div>
     </React.Fragment>
   );
